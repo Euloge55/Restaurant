@@ -388,8 +388,27 @@ header.sticky li a:hover{
         filter: invert(1);
     }
 
-    .navbar{
+    .btn-reserve{
+        padding: 10px 10px;
+        background: #fb911f;
+        margin: 10px 0;
+        text-transform: uppercase;
+    }
+
+    header ul.navbar{
         display: none;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 100%;
+        width: 100%;
+        height: calc(100% -68px);
+        flex-direction: column;
+        background: #fff;
+        gap: 10px;
+        border-top: 1px solid gray;
+        padding: 10px 0;
+        
     }
     section{
         padding: 20px;
@@ -403,19 +422,14 @@ header.sticky li a:hover{
         padding: 0;
         overflow-x: hidden;
     }
-    
-    header .navbar .active{
-        width: 100%;
-        height: calc(100% -68px);
-        position: fixed;
-        top: 0;
-        left: 0;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        background: #ffff;
-        align-items: center;
 
+    header{
+        position: relative;
+    }
+    
+    header ul.active{
+        display: flex;
+        align-items: center;
     }
 
         .menuToggle{ 
