@@ -9,7 +9,7 @@
 <body>
     <header>
         <a href="#" class="logo"><span>R</span>esto</a>
-            <div class="menutoggle" onclick="toggleMenu();"></div>
+            <div class="menuToggle" onclick="toggleMenu();"></div>
             <ul class="navbar">
                 <li><a href="#sect1" onclick="toggleMenu();">Accueil</a></li>
                 <li><a href="#sect2" onclick="toggleMenu();">A propos</a></li>
@@ -249,7 +249,8 @@
     <section class="contact" id="contact">
         <div class="titre noir">
             <h2 class="titre-texte"><span>C</span>ontact</h2>
-            <p>Très bien ! En plus des 6 domaines déjà expliqués hématologie, biochimie, immunologie</p>
+            <p>Une envie, une réservation ou une question ?
+Nous sommes ravis de vous accueillir chez [Nom du restaurant]. Pour réserver une table, commander à l’avance ou simplement nous poser une question, n'hésitez pas à nous écrire ou à nous appeler. À très bientôt autour d’un bon plat !</p>
         </div>
         <div class="contactform">
             <h3>Envoyer un Message</h3>
@@ -279,10 +280,10 @@
         });
         
         function toggleMenu(){
-            const menutoggle = document.querySelector('.menutoggle');
+            const menuToggle = document.querySelector('.menuToggle');
             const navbar = document.querySelector('.navbar');
             navbar.classList.toggle('active');
-            menutoggle.classList.toggle('active');
+            menuToggle.classList.toggle('active');
         }
     </script>
 </body>

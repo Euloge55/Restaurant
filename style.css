@@ -67,6 +67,7 @@ header .navbar li a:hover{
     background-image: url(./image/resto.jpg);
     background-size: cover;
 }
+
 .sect1 .cont{
     max-width: 70%;
     text-align: center;
@@ -160,7 +161,7 @@ section{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin-top: 40px;
+    margin-top: -250px;
 }
 .menu .cont .box{
     width: 250px;
@@ -191,13 +192,14 @@ section{
     font-weight: 400;
 }
 .expert{
-    margin-top: -120px;
+    margin-top: -500px;
 }
 .expert .cont{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 40px;
+    margin-top: -400px;
+    
 }
 .expert .cont .box{
     width: 250px;
@@ -289,6 +291,11 @@ section{
     box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.8);
     width: 100%;
     background-position: unset;
+}
+.titre p{
+    color: white;
+    font-size: 1.5em;
+    text-align: center;
 }
 .contactform{
     padding: 75px 50px;
@@ -411,17 +418,19 @@ header.sticky li a:hover{
 
     }
 
-        .menutoggle{ 
+        .menuToggle{ 
         position: relative;
         width: 40px;
         height: 40px;
-        background-image: url(./image/Abb.jpg);
+        background-size: 30px;
+        background-image: url(./image/menu3.png);
+        background-color: #fb911f;
         background-repeat: no-repeat;
         background-position: center;
         cursor: pointer;      
     }
-    .menutoggle.active{
-        background-image: url(./image/aceil.jpg);
+    .menuToggle.active{
+        background-image: url(./image/X.png);
         background-size: 30px;
         background-repeat: no-repeat;
         background-origin: center;
@@ -432,7 +441,7 @@ header.sticky li a:hover{
     }
     .row .col50 img{
         margin-left: 0%;
-        width: 80%;
+        width: 100%;
     }
     .contactform {
         margin-left: 0%;
@@ -470,14 +479,8 @@ header.sticky li a:hover{
   .menu .cont .box{
     width: 60%;
   }
-  .col50 .titre-texte{
-    font-size: 1.5em;
-  }
-  .row .col50 p{
-    text-align: center;
-    width: 100px;
-    font-size: 0.5em;
-  }
+  
+  
   header section {
     width: 50px;
     text-align: center;
